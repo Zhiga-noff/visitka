@@ -1,0 +1,126 @@
+@import './normalize.scss';
+
+html {
+  font-family: var(--font-rubik), var(--font-vox-2027);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
+  //overflow-x: hidden;
+  @media screen and (max-width: 992px) {
+    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)));
+  }
+  @media screen and (max-width: 639px) {
+    //font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)));
+    //overflow: hidden;
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+body {
+  background-color: #f6f5f3;
+  width: 100%;
+  overflow-x: hidden;
+  @media screen and (max-width: 639px) {
+    position: relative;
+
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+svg {
+  transition: 0.3s;
+}
+
+*::selection {
+  background: red;
+  color: white;
+}
+
+*:focus-visible {
+  outline: 3px solid red;
+  outline-offset: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.ya-share2__popup {
+
+  transform: translate(100%, 0);
+
+  @media screen and (max-width: 639px) {
+    position: absolute;
+    transform: translate(0, 0);
+    top: -22rem !important;
+    left: -1rem !important;
+
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.ya-share2__popup-overlay {
+  width: 200vw !important;
+  transform: translate(-25%);
+}
+
+
+.ya-share2__link_more-button-type_short {
+  width: 3.4375rem !important;
+  height: 3.4375rem !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    background-size: 1rem 1rem !important
+  }
+
+
+  @media screen and (max-width: 639px) {
+    width: 3.2rem !important;
+    height: 3.2rem !important;
+    padding: 0 !important;
+
+    background-color: white !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+  }
+
+  span {
+    @media screen and (max-width: 639px) {
+      transform: scale(0.9);
+    }
+  }
+}
+
+//.pic_bord_grey {
+//  @media screen and (max-width: 639px) {
+//    & iframe {
+//      height: 30rem !important;
+//    }
+//  }
+//}
+
+.ymaps-2-1-79-map {
+  width: auto !important;
+  height: 25rem !important;
+
+  @media screen and (max-width: 639px) {
+    height: 30rem;
+  }
+}
+
+.program-guide-image {
+  max-width: 100%;
+  padding-bottom: 1.875rem;
+}

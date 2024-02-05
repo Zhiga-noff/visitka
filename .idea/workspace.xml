@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1cf336e-65e9-4f9d-949a-a5acfccb8eae" name="Changes" comment="не инициализирован">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/home/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/layout/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scripts/playerjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/global-error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/android-chrome-256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-120x120-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-120x120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-152x152-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-152x152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-180x180-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-57x57-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-57x57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-76x76-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-76x76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/favicon/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/rubik/Rubik-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/vox-2017/voxbold2017.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/vox-2017/voxmedium2017.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/vox-2017/voxsemibold2017.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/home/ad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/no-photo-16x9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/no-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/preview/16х9_audiobooks.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/preview/16х9_main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/preview/16х9_programs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/radio-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/embed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/iconLitRes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/odnoklas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/rutube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/stream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/telegram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/vk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/whatsapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/yandex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/zen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/share/zvuk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/picture-16x9-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/picture-16x9-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/picture-16x9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/right/Rectangle 1244.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/right/Rectangle 1245.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/right/Rectangle 1246.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock/right/Rectangle 1247.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/main-layout/main-layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/main-layout/main-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/providers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/providers/providers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/audio-volume.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/auth.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/fetch-item.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/format-time.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/player-js.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/program-guide.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/sound.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/toogle-track.hook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/edition.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/edition.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/video/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/video/video.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/edition/video/video.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/news/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/list-program.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/list-program.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/li/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/li/li.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/li/li.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/more.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/more/more.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/program.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/program/program.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/programs-day.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/programs-day.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/programs-day/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/list-programs/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/nav-programs/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/nav-programs/nav-programs.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/nav-programs/nav-programs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-components/program-guide/nav-programs/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/home.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/init-page.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/init-search-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ssr-fetch.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rtk/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rtk/main.rtk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rtk/user.rtk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/overlay.slices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/player.slices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/program-guide.slices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/user.slices.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2bwzaNDGwmjNlYwHVi1KU6Ua1iM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\KZHiganov\\GIT-personal\\visitka\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\Users\\KZHiganov\\GIT-personal\\visitka\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1cf336e-65e9-4f9d-949a-a5acfccb8eae" name="Changes" comment="" />
+      <created>1707140992954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707140992954</updated>
+      <workItem from="1707140995358" duration="918000" />
+      <workItem from="1707141979359" duration="1079000" />
+    </task>
+    <task id="LOCAL-00001" summary="не инициализирован">
+      <created>1707142003986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707142003986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="не инициализирован" />
+    <option name="LAST_COMMIT_MESSAGE" value="не инициализирован" />
+  </component>
+</project>
