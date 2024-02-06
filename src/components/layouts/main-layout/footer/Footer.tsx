@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from 'assets/image/logo.png';
 import styles from './Footer.module.scss';
-import { listContacts } from 'libs/constants/contacts';
+import { listContacts } from 'libs/constants/mock/contacts.mock';
 import Link from 'next/link';
 import { listNavFooterBottom, listNavFooterTop } from 'libs/constants/nav';
 import { List } from '../../../list/List';

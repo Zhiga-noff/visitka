@@ -1,5 +1,5 @@
 import mock from 'assets/image/mock/mock-large.png';
-import { IData } from '../types/data.types';
+import { IData } from '../../types/data.types';
 
 export const sliderLgConstants: IData[] = [
   {

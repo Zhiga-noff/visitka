@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { SliderLG } from '../components/slider-lg/SliderLG';
-import { sliderLgConstants } from '../libs/constants/slider-lg-constants';
+import { sliderLgConstants } from '../libs/constants/mock/slider-lg.constants';
+import { Filter } from '../components/filter/Filter';
 
 export const metadata: Metadata = {
   title: 'Главная страница',
@@ -18,6 +19,7 @@ export default async function HomePage() {
   return (
     <>
       <SliderLG data={data} />
+      <Filter />
     </>
   );
 }
