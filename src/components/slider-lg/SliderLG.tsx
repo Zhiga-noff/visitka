@@ -5,8 +5,9 @@ import styles from './SliderLG.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { IData } from '../../libs/types/data.types';
-import Link from 'next/link';
 import { Navigation } from 'swiper/modules';
+import { SlideElement } from './slide-element/SlideElement';
+import { ButtonSlider } from '../button-slider';
 
 interface IProps {
   data: IData[];
@@ -17,11 +18,20 @@ export const SliderLG: FC<IProps> = ({ data }) => {
   const idOne = 'id-next-button';
   const idTwo = 'id-prev-button';
 
+  const clickSlideButton = (type) => {
+    if (type === 'prev' && index !== 1) {
+      setIndex((prevState) => prevState - 1);
+    }
+    if (type === 'next' && index !== data.length) {
+      setIndex((prevState) => prevState + 1);
+    }
+  };
+
   return (
     <article className={styles.wrapper}>
       <Swiper
         className={styles.slider}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() => console.log('slide-element change')}
         slidesPerView={1}
         navigation={{
           nextEl: `#${idOne}`,
@@ -32,24 +42,23 @@ export const SliderLG: FC<IProps> = ({ data }) => {
         {data.map(({ title, url, media, date: dateNow }, i) => {
           return (
             <SwiperSlide key={i}>
-              <Link href={url}>
-                <figure className={styles.figure}>
-                  <div className={styles.imageContainer}>
-                    <img src={media.images.i16x9} alt={title} />
-                  </div>
-                  <figcaption className={styles.figcaption}>
-                    <div className={styles.description}>
-                      <h2 className={styles.title}>{title}</h2>
-                      <div className="">
-                        <data>{dateNow}</data>
-                      </div>
-                    </div>
-                  </figcaption>
-                </figure>
-              </Link>
+              <SlideElement url={url} media={media} title={title} dateNow={dateNow} />
             </SwiperSlide>
           );
         })}
+        <div className={styles.buttonsContainer}>
+          <ButtonSlider
+            id={idTwo}
+            type={'prev'}
+            onClick={() => clickSlideButton('prev')}
+          />
+          <p>{index + '/' + data.length}</p>
+          <ButtonSlider
+            id={idOne}
+            type={'next'}
+            onClick={() => clickSlideButton('next')}
+          />
+        </div>
       </Swiper>
     </article>
   );

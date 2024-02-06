@@ -1,6 +1,9 @@
-import { ForwardRefRenderFunction, forwardRef, DetailedHTMLProps, BaseHTMLAttributes } from 'react';
-import { clsx } from 'clsx';
-import styles from './button-slider.module.scss';
+import React, {
+  BaseHTMLAttributes,
+  DetailedHTMLProps,
+  forwardRef,
+  ForwardRefRenderFunction,
+} from 'react';
 
 interface IProps
   extends DetailedHTMLProps<BaseHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
@@ -8,12 +11,24 @@ interface IProps
   id: string;
 }
 
+// const ButtonSliderRef: ForwardRefRenderFunction<HTMLButtonElement, IProps> = (
+//   { type, id, ...restProps },
+//   ref,
+// ) => (
+//   <button {...restProps} id={id} className={clsx(styles.btn, styles[type])} ref={ref}>
+//     {type === 'next' ? 'Следующий слайд' : 'Предыдущий слайд'}
+//   </button>
+// );
 const ButtonSliderRef: ForwardRefRenderFunction<HTMLButtonElement, IProps> = (
   { type, id, ...restProps },
-  ref
+  ref,
 ) => (
-  <button {...restProps} id={id} className={clsx(styles.btn, styles[type])} ref={ref}>
-    {type === 'next' ? 'Следующий слайд' : 'Предыдущий слайд'}
+  <button {...restProps} id={id} ref={ref}>
+    {type === 'next' ? (
+      <img src="image/home/next.png" alt="" />
+    ) : (
+      <img src="image/home/prev.png" alt="" />
+    )}
   </button>
 );
 

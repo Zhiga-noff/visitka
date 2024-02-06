@@ -7,6 +7,7 @@
 .slider {
   max-height: 40.2rem;
   background-color: $bg;
+  position: relative;
 }
 
 .figure {
@@ -43,3 +44,17 @@
   width: 90%;
 }
 
+.buttonsContainer {
+  position: absolute;
+  bottom: 2.15rem;
+  right: 3.25rem;
+  z-index: 30;
+
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0 1rem;
+  }
+
+}
