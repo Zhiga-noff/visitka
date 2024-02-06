@@ -1,0 +1,42 @@
+.btn {
+  position: absolute;
+
+  background-size: 5.625rem;
+  height: 5.625rem;
+  width: 5.625rem;
+  top: 50%;
+  color: transparent;
+  z-index: 1;
+  transition: 0.2s;
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 993px) {
+
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+
+  &.next {
+    background: url('../../../public/image/home/next.png');
+    right: -45px;
+    left: auto;
+
+    @media screen and (max-width: 993px) {
+      right: -2.2rem;
+      top: 55%;
+    }
+  }
+
+  &.prev {
+    right: auto;
+    left: -45px;
+    transform: translateY(-50%);
+    background: url('../../../public/image/home/prev.png');
+
+    @media screen and (max-width: 993px) {
+      left: -2.2rem;
+    }
+  }
+}

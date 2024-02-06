@@ -1,20 +1,20 @@
 'use client';
 
-import React, { FC, useMemo } from 'react';
+import React, { FC } from 'react';
 import styles from './SliderLG.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { IData } from '../../libs/types/data.types';
 import Link from 'next/link';
 import { Navigation } from 'swiper/modules';
-import { random } from '../../libs/utils/random';
 
 interface IProps {
   data: IData[];
 }
 
 export const SliderLG: FC<IProps> = ({ data }) => {
-  const [idOne, idTwo] = useMemo(() => random(10, 2), []);
+  const idOne = 'id-next-button';
+  const idTwo = 'id-prev-button';
 
   return (
     <article className={styles.wrapper}>
@@ -30,8 +30,8 @@ export const SliderLG: FC<IProps> = ({ data }) => {
       >
         {data.map(({ title, url, media, date: dateNow }, i) => {
           return (
-            <Link href={url}>
-              <SwiperSlide key={i}>
+            <SwiperSlide key={i}>
+              <Link href={url}>
                 <figure className={styles.figure}>
                   <div className={styles.imageContainer}>
                     <img src={media.images.i16x9} alt={title} />
@@ -39,12 +39,14 @@ export const SliderLG: FC<IProps> = ({ data }) => {
                   <figcaption className={styles.figcaption}>
                     <div className={styles.description}>
                       <h2 className={styles.title}>{title}</h2>
-                      <data>{dateNow}</data>
+                      <div className="">
+                        <data>{dateNow}</data>
+                      </div>
                     </div>
                   </figcaption>
                 </figure>
-              </SwiperSlide>
-            </Link>
+              </Link>
+            </SwiperSlide>
           );
         })}
       </Swiper>
