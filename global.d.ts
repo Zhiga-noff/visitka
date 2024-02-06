@@ -4,9 +4,6 @@ declare global {
   interface Window {
     MSStream: boolean;
     yaContextCb: any;
-    Playerjs: any;
-    pjscnfgs: any;
-    pljssglobal: any;
     Ya: any;
     ym: any;
   }

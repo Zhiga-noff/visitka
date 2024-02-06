@@ -1,5 +1,5 @@
 import {MainLayout} from 'components/layouts';
-import {fontFox2027, rubik} from 'libs/constants/fonts';
+import {montserrat} from 'libs/constants/fonts';
 import {clsx} from 'clsx';
 
 import 'assets/favicon.ico';
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 // Главная надстройка над всеми страницами
 export default function RootLayout({children}: IProps) {
     return (
-        <html lang="ru" className={clsx(rubik.variable, fontFox2027.variable)}>
+        <html lang="ru" className={clsx(montserrat.variable)}>
         <body>
         <MainLayout>{children}</MainLayout>
         {/* Кастомная надстройка для принимания страниц  */}
