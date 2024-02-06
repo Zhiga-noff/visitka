@@ -5,10 +5,10 @@ html {
   font-family: var(--font-rubik), var(--font-vox-2027);
   overflow-y: auto;
   scrollbar-gutter: stable;
-  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
+  font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
   //overflow-x: hidden;
   @media screen and (max-width: 992px) {
-    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
   }
   @media screen and (max-width: 639px) {
     //font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)));
@@ -39,7 +39,7 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-svg {
+svg, a {
   transition: 0.3s;
 }
 

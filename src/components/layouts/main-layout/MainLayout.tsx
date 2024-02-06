@@ -1,6 +1,7 @@
 import {FC, memo, ReactNode} from 'react';
 import {Providers} from 'components/providers';
-import styles from './main-layout.module.scss';
+import styles from './MainLayout.module.scss';
+import {Header} from "./header/Header";
 
 interface IProps {
     children: ReactNode;
@@ -9,11 +10,10 @@ interface IProps {
 export const MainLayout: FC<IProps> = memo(function MainLayout({children}) {
     return (
         <Providers>
-            <section className={styles.wrapper}>
+                <Header/>
                 <main className={styles.container}>
                     {children} {/* Сюда помещается содержимое страниц */}
                 </main>
-            </section>
         </Providers>
     );
 });
