@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './SliderLG.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,13 +13,14 @@ interface IProps {
 }
 
 export const SliderLG: FC<IProps> = ({ data }) => {
+  const [index, setIndex] = useState(1);
   const idOne = 'id-next-button';
   const idTwo = 'id-prev-button';
 
   return (
     <article className={styles.wrapper}>
       <Swiper
-        className=""
+        className={styles.slider}
         onSlideChange={() => console.log('slide change')}
         slidesPerView={1}
         navigation={{
