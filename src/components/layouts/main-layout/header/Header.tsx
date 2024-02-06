@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import logo from 'assets/image/logo.png';
 import styles from './Header.module.scss';
-import { listNavHeader } from '../../../../libs/constants/nav';
+import { listNavHeader } from 'libs/constants/nav';
+import { List } from '../../../list/List';
 
 export const Header = () => {
   return (
@@ -10,13 +11,7 @@ export const Header = () => {
       <Link href="/" className={styles.logo}>
         <img src={logo.src} alt="Медиагруппа Звезда" />
       </Link>
-      <ul className={styles.nav}>
-        {listNavHeader.map((item) => (
-          <li className={styles.item}>
-            <Link href={item.link}>{item.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <List className={styles.nav} noLink={false} elements={listNavHeader} />
     </header>
   );
 };

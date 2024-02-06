@@ -1,10 +1,7 @@
 /* Константа со списком пунктов меню
    и ссылок на их страницы */
 
-interface IMenu {
-  title: string;
-  link: string;
-}
+import { IMenu } from '../types/menu.types';
 
 export const listNavHeader: IMenu[] = [
   {

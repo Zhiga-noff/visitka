@@ -10,6 +10,7 @@
   z-index: 10;
   top: 0;
   left: 0;
+
   &::before {
     content: '';
     position: fixed;
@@ -35,14 +36,17 @@
 
 .nav {
   display: flex;
-}
 
-.item {
-  margin-right: 3.16rem;
-  a {
-    color: white;
-    &:hover {
-      color: $red;
+  li {
+    margin-right: 3.16rem;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
+
