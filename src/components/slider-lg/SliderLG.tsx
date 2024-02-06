@@ -1,13 +1,13 @@
 'use client';
 
 import React, { FC, useMemo } from 'react';
-import { random } from '../../libs/utils/random';
-import mock from 'assets/image/mock/mock-large.png';
 import styles from './SliderLG.module.scss';
 
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { IData } from '../../libs/types/data.types';
+import Link from 'next/link';
+import { Navigation } from 'swiper/modules';
+import { random } from '../../libs/utils/random';
 
 interface IProps {
   data: IData[];
@@ -16,11 +16,11 @@ interface IProps {
 export const SliderLG: FC<IProps> = ({ data }) => {
   const [idOne, idTwo] = useMemo(() => random(10, 2), []);
 
-  const onSlideChange: SwiperProps['onSlideChange'] = ({ activeIndex }) => {};
   return (
-    <article className="">
+    <article className={styles.wrapper}>
       <Swiper
-        onSlideChange={onSlideChange}
+        className=""
+        onSlideChange={() => console.log('slide change')}
         slidesPerView={1}
         navigation={{
           nextEl: `#${idOne}`,
@@ -28,19 +28,25 @@ export const SliderLG: FC<IProps> = ({ data }) => {
         }}
         modules={[Navigation]}
       >
-        <SwiperSlide>
-          {data.map(({ title, url, media }, i) => {
-            return (
-              <figure className={styles.figure}>
-                <img src={mock.src} alt={'заглушка'} />
-                <figcaption className={styles.figcaption}>
-                  В Санкт-Петербурге готовится к старту самый масштабный общественный
-                  арктический форум года
-                </figcaption>
-              </figure>
-            );
-          })}
-        </SwiperSlide>
+        {data.map(({ title, url, media, date: dateNow }, i) => {
+          return (
+            <Link href={url}>
+              <SwiperSlide key={i}>
+                <figure className={styles.figure}>
+                  <div className={styles.imageContainer}>
+                    <img src={media.images.i16x9} alt={title} />
+                  </div>
+                  <figcaption className={styles.figcaption}>
+                    <div className={styles.description}>
+                      <h2 className={styles.title}>{title}</h2>
+                      <data>{dateNow}</data>
+                    </div>
+                  </figcaption>
+                </figure>
+              </SwiperSlide>
+            </Link>
+          );
+        })}
       </Swiper>
     </article>
   );
