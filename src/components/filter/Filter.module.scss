@@ -1,6 +1,11 @@
-.container {
+.wrapper {
+  padding: 2rem 2.25rem;
+}
+
+.containerFilter {
   max-width: 53rem;
-  padding: 2rem 0 2rem 3.75rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 
   display: flex;
   justify-content: space-between;
@@ -25,6 +30,37 @@
   box-shadow: 0px -45px 40px -32px rgba(52, 52, 68, 1) inset;
 
   transition-duration: 0.3s;
+
+  &.active {
+    background-color: rgb(52, 52, 68, 0.75);
+  }
+
+  &:hover {
+    background-color: rgb(52, 52, 68, 0.75);
+  }
+}
+
+.containerTabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabsButton {
+  font-size: 1.5rem;
+
+  height: 9.6rem;
+  width: 17.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition-duration: 0.3s;
+
+  -webkit-box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
+  -moz-box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
+  box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
 
   &.active {
     background-color: rgb(52, 52, 68, 0.75);

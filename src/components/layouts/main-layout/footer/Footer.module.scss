@@ -59,6 +59,10 @@
 
     a {
       color: white;
+
+      &:hover {
+        color: $red;
+      }
     }
   }
 }

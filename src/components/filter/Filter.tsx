@@ -1,9 +1,8 @@
 'use client';
-
 import React, { useState } from 'react';
-import { filterMock } from 'libs/constants/mock/filter.mock';
 import styles from './Filter.module.scss';
-import { clsx } from 'clsx';
+import { filterMock, tabsMock } from '../../libs/constants/mock/filter.mock';
+import { Tabs } from './tabs/Tabs';
 
 export const Filter = () => {
   const [typeInfo, setTypeInfo] = useState('Телеканал Звезда');
@@ -13,24 +12,38 @@ export const Filter = () => {
   };
 
   return (
-    <article className={styles.container}>
-      <h3 className={styles.filter}>Фильтр</h3>
-      <nav className={styles.navigation}>
-        {filterMock.map((item) => {
+    <article className={styles.wrapper}>
+      <div className={styles.containerFilter}>
+        <h3 className={styles.filter}>Фильтр</h3>
+        <nav className={styles.navigation}>
+          {filterMock.map((item, index) => {
+            return (
+              <Tabs
+                key={index}
+                active={styles.active}
+                item={item}
+                className={styles.filterButton}
+                typeInfo={typeInfo}
+                click={clickButton}
+              />
+            );
+          })}
+        </nav>
+      </div>
+      <div className={styles.containerTabs}>
+        {tabsMock.map((item, index) => {
           return (
-            <button
-              onClick={() => {
-                clickButton(item);
-              }}
-              className={clsx(styles.filterButton, {
-                [styles.active]: typeInfo === item,
-              })}
-            >
-              {item}
-            </button>
+            <Tabs
+              key={index}
+              active={styles.active}
+              item={item}
+              className={styles.tabsButton}
+              typeInfo={typeInfo}
+              click={clickButton}
+            />
           );
         })}
-      </nav>
+      </div>
     </article>
   );
 };

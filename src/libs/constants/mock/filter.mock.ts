@@ -12,3 +12,5 @@ export const filterMock: string[] = [
   '2022',
   '2023',
 ];
+
+export const tabsMock = ['Мероприятия', 'Проекты', 'Информационные материалы', 'Фото'];

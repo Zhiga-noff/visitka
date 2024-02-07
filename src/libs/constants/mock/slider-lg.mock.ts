@@ -1,7 +1,7 @@
 import mock from 'assets/image/mock/mock-large.png';
 import { IData } from '../../types/data.types';
 
-export const sliderLgConstants: IData[] = [
+export const sliderLgMock: IData[] = [
   {
     title:
       'В Санкт-Петербурге готовится к старту самый масштабный общественный арктический форум года',

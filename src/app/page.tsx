@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import { SliderLG } from '../components/slider-lg/SliderLG';
-import { sliderLgConstants } from '../libs/constants/mock/slider-lg.constants';
+import { sliderLgMock } from '../libs/constants/mock/slider-lg.mock';
 import { Filter } from '../components/filter/Filter';
+import { News } from '../components/news/News';
+import { newsMock } from '../libs/constants/mock/news.mock';
 
 export const metadata: Metadata = {
   title: 'Главная страница',
@@ -15,11 +17,11 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const data = sliderLgConstants;
   return (
     <>
-      <SliderLG data={data} />
+      <SliderLG data={sliderLgMock} />
       <Filter />
+      <News data={newsMock} />
     </>
   );
 }

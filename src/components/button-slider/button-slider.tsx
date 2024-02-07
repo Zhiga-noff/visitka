@@ -11,14 +11,6 @@ interface IProps
   id: string;
 }
 
-// const ButtonSliderRef: ForwardRefRenderFunction<HTMLButtonElement, IProps> = (
-//   { type, id, ...restProps },
-//   ref,
-// ) => (
-//   <button {...restProps} id={id} className={clsx(styles.btn, styles[type])} ref={ref}>
-//     {type === 'next' ? 'Следующий слайд' : 'Предыдущий слайд'}
-//   </button>
-// );
 const ButtonSliderRef: ForwardRefRenderFunction<HTMLButtonElement, IProps> = (
   { type, id, ...restProps },
   ref,
