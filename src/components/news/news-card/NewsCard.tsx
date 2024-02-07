@@ -18,7 +18,7 @@ export const NewsCard: FC<IProps> = ({ data, activeClass }) => {
         <img src={media.images.i16x9} alt={title} />
         <figcaption className="">
           <div className="">
-            <h3 className="">{title}</h3>
+            <h3 className={styles.title}>{title}</h3>
             <div className="">
               <data>{dateNow}</data>
             </div>
