@@ -1,0 +1,36 @@
+.container {
+  max-width: 53rem;
+  padding: 2rem 0 2rem 3.75rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  margin-right: 2rem;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filterButton {
+  padding: 0.25rem 0.4rem;
+
+  -webkit-box-shadow: 0px -45px 40px -32px rgba(52, 52, 68, 1) inset;
+  -moz-box-shadow: 0px -45px 40px -32px rgba(52, 52, 68, 1) inset;
+  box-shadow: 0px -45px 40px -32px rgba(52, 52, 68, 1) inset;
+
+  transition-duration: 0.3s;
+
+  &.active {
+    background-color: rgb(52, 52, 68, 0.75);
+  }
+
+  &:hover {
+    background-color: rgb(52, 52, 68, 0.75);
+  }
+}
