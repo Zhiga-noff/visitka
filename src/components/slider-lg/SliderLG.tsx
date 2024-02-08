@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IData } from '../../libs/types/data.types';
 import { Navigation } from 'swiper/modules';
 import { SlideElement } from './slide-element/SlideElement';
-import { ButtonSlider } from '../button-slider';
+import { ButtonSlider } from '../ui/button-slider';
 
 interface IProps {
   data: IData[];

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import { IData } from '../../../libs/types/data.types';
+import { IData } from '../../../../libs/types/data.types';
 import styles from '../News.module.scss';
 import { clsx } from 'clsx';
 

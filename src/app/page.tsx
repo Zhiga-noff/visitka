@@ -2,8 +2,7 @@ import { Metadata } from 'next';
 import { SliderLG } from '../components/slider-lg/SliderLG';
 import { sliderLgMock } from '../libs/constants/mock/slider-lg.mock';
 import { Filter } from '../components/filter/Filter';
-import { News } from '../components/news/News';
-import { newsMock } from '../libs/constants/mock/news.mock';
+import { DynamicInfo } from '../components/dynamic-information/DynamicInfo';
 
 export const metadata: Metadata = {
   title: 'Главная страница',
@@ -21,7 +20,7 @@ export default async function HomePage() {
     <>
       <SliderLG data={sliderLgMock} />
       <Filter />
-      <News data={newsMock} />
+      <DynamicInfo />
     </>
   );
 }
