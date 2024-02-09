@@ -17,7 +17,7 @@ export const PhotoGallery: FC<IProps> = ({ data }) => {
       <div className={styles.container}>
         {data.map((item) => {
           return (
-            <div className={styles.imageContainer}>
+            <div className={styles.imageContainer} key={item.link}>
               <img src={item.link} alt={item.title} />
               <a href={item.link} download={item.title} className={styles.shareButton}>
                 <SvgItem />
