@@ -39,6 +39,7 @@ export const PhotoGallery: FC<IProps> = ({ data }) => {
           );
         })}
       </div>
+      <p>Сотрите так же</p>
       {image ? <div className={styles.modal} onClick={() => {
         setImage('');
       }}>
