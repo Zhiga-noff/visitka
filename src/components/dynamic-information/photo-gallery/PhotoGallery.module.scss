@@ -44,4 +44,49 @@
   z-index: 1000;
   top: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeImage {
+  width: 70%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.close {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  cursor: pointer;
+
+  &::before, &::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+
+    position: absolute;
+  }
+
+  &::before {
+    top: 0.95rem;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    bottom: 0.95rem;
+    transform: rotate(-45deg);
+  }
 }

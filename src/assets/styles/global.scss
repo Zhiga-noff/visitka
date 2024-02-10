@@ -17,6 +17,10 @@ html {
       overflow: hidden;
     }
   }
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 body {
@@ -30,6 +34,8 @@ body {
     position: relative;
 
   }
+
+
 }
 
 input:-webkit-autofill,

@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import styles from './PhotoGallery.module.scss';
 import { IMenu } from '../../../libs/types/menu.types';
 import { SvgItem } from '../../ui/SvgItem';
@@ -10,14 +10,27 @@ interface IProps {
 export const PhotoGallery: FC<IProps> = ({ data }) => {
   const [image, setImage] = useState('');
 
-  const clickImage = (link) => {};
+  const clickImage = (linkImage) => {
+    setImage(linkImage);
+  };
+
+  useEffect(() => {
+    const HTMLElement = document.children[0];
+    if (image) {
+      HTMLElement.classList.add('lock');
+    } else {
+      HTMLElement.classList.remove('lock');
+    }
+  }, [image]);
 
   return (
     <>
       <div className={styles.container}>
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <div className={styles.imageContainer} key={item.link}>
+            <div className={styles.imageContainer} key={index} onClick={() => {
+              clickImage(item.link);
+            }}>
               <img src={item.link} alt={item.title} />
               <a href={item.link} download={item.title} className={styles.shareButton}>
                 <SvgItem />
@@ -26,7 +39,14 @@ export const PhotoGallery: FC<IProps> = ({ data }) => {
           );
         })}
       </div>
-      <div className={styles.modal}></div>
+      {image ? <div className={styles.modal} onClick={() => {
+        setImage('');
+      }}>
+        <div className={styles.close}></div>
+        <div className={styles.largeImage}>
+          <img src={image} alt="" />
+        </div>
+      </div> : ''}
     </>
   );
 };
