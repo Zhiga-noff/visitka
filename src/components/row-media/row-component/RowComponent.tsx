@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import { SvgItem } from '../ui/SvgItem';
-import styles from './RowMedia.module.scss';
+import { SvgItem } from 'components/ui/SvgItem';
+import styles from '../RowMedia.module.scss';
 
 interface IProps {
   info: {
@@ -14,7 +14,7 @@ interface IProps {
   download?: boolean;
 }
 
-export const RowMedia: FC<IProps> = ({ info, download }) => {
+export const RowComponent: FC<IProps> = ({ info, download }) => {
   const { type, resource, image, url, title } = info;
   return (
     download ? <a href={url} className={styles.row} download={url}>
