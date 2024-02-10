@@ -1,0 +1,63 @@
+.row {
+  display: flex;
+  align-items: center;
+
+  padding: 0 3.25rem;
+  color: white;
+  margin-bottom: 0.5rem;
+
+  -webkit-box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
+  -moz-box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
+  box-shadow: 0px -216px 116px -85px rgba(52, 52, 68, 1) inset;
+
+  transition-duration: 0.3s;
+
+  &:hover {
+    -webkit-box-shadow: 0px -216px 116px -85px rgba(201, 12, 11, 1) inset;
+    -moz-box-shadow: 0px -216px 116px -85px rgba(201, 12, 11, 1) inset;
+    box-shadow: 0px -216px 116px -85px rgba(201, 12, 11, 1) inset;
+
+  }
+
+  svg {
+    display: block;
+    height: 2rem !important;
+    width: 1.2rem !important;
+    fill: white;
+  }
+}
+
+.resource {
+  max-width: 12rem;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin-right: 1.5rem;
+
+  h5 {
+    margin-bottom: 1rem;
+  }
+
+}
+
+.imageContainer {
+  height: 100%;
+  width: 14.16rem;
+
+  margin-right: 1.5rem;
+
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  min-width: 40%;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+

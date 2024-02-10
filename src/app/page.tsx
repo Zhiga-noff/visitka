@@ -3,6 +3,9 @@ import { SliderLG } from '../components/slider-lg/SliderLG';
 import { sliderLgMock } from '../libs/constants/mock/slider-lg.mock';
 import { Filter } from '../components/filter/Filter';
 import { DynamicInfo } from '../components/dynamic-information/DynamicInfo';
+import { rowInfoMock } from '../libs/constants/mock/row-info.mock';
+import { RowMedia } from '../components/row-media/RowMedia';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Главная страница',
@@ -21,6 +24,9 @@ export default async function HomePage() {
       <SliderLG data={sliderLgMock} />
       <Filter />
       <DynamicInfo />
+      {rowInfoMock.map((item, index) => {
+        return <RowMedia info={item} key={index} download={true} />;
+      })}
     </>
   );
 }
