@@ -1,7 +1,6 @@
 import zvezda from 'assets/image/mock/zvezda.png';
 
 export const rowInfoMock = [{
-  type: 'fsadfasdf',
   resource: 'Телеканал звезда',
   image: zvezda.src,
   url: '#',
