@@ -11,16 +11,16 @@ interface IProps {
 export const List: FC<IProps> = ({ className, noLink, elements, ...props }) => {
   return noLink ? (
     <ul className={className}>
-      {elements.map((item) => (
-        <li>
+      {elements.map((item, index) => (
+        <li key={index}>
           <a href={item.link}>{item.title}</a>
         </li>
       ))}
     </ul>
   ) : (
     <ul className={className}>
-      {elements.map((item) => (
-        <li>
+      {elements.map((item, index) => (
+        <li key={index}>
           <Link href={item.link}>{item.title}</Link>
         </li>
       ))}

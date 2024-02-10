@@ -29,8 +29,8 @@ export const Footer = () => {
       </div>
       <div className={styles.description}>
         <ul className={styles.icons}>
-          {listSocial.map((item) => (
-            <li>
+          {listSocial.map((item, index) => (
+            <li key={index}>
               <a href={item.link} target="_blank">
                 <img src={item.img} alt={item.title} />
               </a>
