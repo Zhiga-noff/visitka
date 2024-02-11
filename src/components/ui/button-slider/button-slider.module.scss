@@ -19,7 +19,7 @@
   }
 
   &.next {
-    background: url('../../../../public/image/home/next.png');
+    background: url('../../../../public/image/layout/next.png');
     right: -45px;
     left: auto;
 
@@ -33,7 +33,7 @@
     right: auto;
     left: -45px;
     transform: translateY(-50%);
-    background: url('../../../../public/image/home/prev.png');
+    background: url('../../../../public/image/layout/prev.png');
 
     @media screen and (max-width: 993px) {
       left: -2.2rem;

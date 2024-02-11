@@ -4,6 +4,7 @@ import { sliderLgMock } from '../libs/constants/mock/slider-lg.mock';
 import { Filter } from '../components/filter/Filter';
 import { DynamicInfo } from '../components/dynamic-information/DynamicInfo';
 import React from 'react';
+import { Ticker } from '../components/ticker/Ticker';
 
 export const metadata: Metadata = {
   title: 'Главная страница',
@@ -22,6 +23,7 @@ export default async function HomePage() {
       <SliderLG data={sliderLgMock} />
       <Filter />
       <DynamicInfo />
+      <Ticker />
 
     </>
   );
