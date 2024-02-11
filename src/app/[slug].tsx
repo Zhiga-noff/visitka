@@ -7,7 +7,7 @@ import React from 'react';
 import { Ticker } from '../components/ticker/Ticker';
 
 export const metadata: Metadata = {
-  title: 'Главная страница',
+  title: 'Динамическая страница статьи',
   openGraph: {
     title: 'Главная страница',
     description: '',

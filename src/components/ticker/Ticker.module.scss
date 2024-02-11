@@ -3,12 +3,13 @@
 .container {
   padding: 3.75rem 0;
   background-color: $darkRed;
-  display: block;
+
 }
 
 .imageContainer {
   margin: 0 2.75rem;
   max-width: 16.5rem;
+  display: block;
 
   img {
     object-fit: contain;
