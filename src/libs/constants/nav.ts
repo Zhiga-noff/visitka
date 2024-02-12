@@ -10,7 +10,7 @@ export const listNavHeader: IMenu[] = [
   },
   {
     title: 'Ресурсы',
-    link: '/resources',
+    link: '/resources/tvzvezda',
   },
   {
     title: 'Контакты',
@@ -65,5 +65,28 @@ export const listNavFooterBottom: IMenu[] = [
   {
     title: 'Фото',
     link: '/photo',
+  },
+] as const;
+
+export const listNavResource: IMenu[] = [
+  {
+    title: 'Телеканал Звезда',
+    link: '/resources/tvzvezda',
+  },
+  {
+    title: 'Радио Звезда',
+    link: '/resources/radio-zvezda',
+  },
+  {
+    title: 'Еженедельник',
+    link: '/resources/ezhenedelnik',
+  },
+  {
+    title: 'Звезда Плюс',
+    link: '/resources/zvezda-plus',
+  },
+  {
+    title: 'Главкино',
+    link: '/resources/glavkino',
   },
 ] as const;

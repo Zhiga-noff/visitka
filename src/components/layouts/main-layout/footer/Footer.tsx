@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 import { listContacts } from 'libs/constants/mock/contacts.mock';
 import Link from 'next/link';
 import { listNavFooterBottom, listNavFooterTop } from 'libs/constants/nav';
-import { List } from '../../../list/List';
+import { List } from '../../../ui/list/List';
 import { listSocial } from '../../../../libs/constants/social';
 
 export const Footer = () => {

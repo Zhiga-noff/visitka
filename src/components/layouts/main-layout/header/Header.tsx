@@ -3,7 +3,7 @@ import Link from 'next/link';
 import logo from 'assets/image/logo.png';
 import styles from './Header.module.scss';
 import { listNavHeader } from 'libs/constants/nav';
-import { List } from '../../../list/List';
+import { List } from '../../../ui/list/List';
 
 export const Header = () => {
   return (

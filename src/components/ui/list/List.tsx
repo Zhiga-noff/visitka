@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { IMenu } from '../../libs/types/menu.types';
+import { IMenu } from '../../../libs/types/menu.types';
 import Link from 'next/link';
 
 interface IProps {
   className: string;
-  noLink: boolean;
+  noLink?: boolean;
   elements: IMenu[];
 }
 
