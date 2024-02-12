@@ -28,7 +28,7 @@ export const SliderLG: FC<IProps> = ({ data }) => {
   };
 
   return (
-    <article className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <Swiper
         className={styles.slider}
         onSlideChange={() => console.log('slide-element change')}
@@ -60,6 +60,6 @@ export const SliderLG: FC<IProps> = ({ data }) => {
           />
         </div>
       </Swiper>
-    </article>
+    </section>
   );
 };

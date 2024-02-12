@@ -1,6 +1,10 @@
 import { Metadata } from 'next';
 import { Filter } from '../../components/filter/Filter';
 import React from 'react';
+import { Article } from '../../components/article/Article';
+import { articleMock } from '../../libs/constants/mock/article.mock';
+import { RowsMedia } from '../../components/row-media/RowsMedia';
+import { rowInfoMock } from '../../libs/constants/mock/row-info.mock';
 
 export const metadata: Metadata = {
   title: 'Динамическая страница статьи',
@@ -17,7 +21,8 @@ export default async function ArticlePage() {
   return (
     <>
       <Filter />
-
+      <Article articleData={articleMock} />
+      <RowsMedia data={rowInfoMock} anons={'Читайте также'} />
     </>
   );
 }

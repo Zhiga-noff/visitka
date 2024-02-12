@@ -20,7 +20,7 @@ export const NewsCard: FC<IProps> = ({ data, activeClass }) => {
           <div className="">
             <h3 className={styles.title}>{title}</h3>
             <div className="">
-              <data>{dateNow}</data>
+              <time dateTime={dateNow}>{dateNow}</time>
             </div>
           </div>
         </figcaption>

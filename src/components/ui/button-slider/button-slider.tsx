@@ -17,9 +17,9 @@ const ButtonSliderRef: ForwardRefRenderFunction<HTMLButtonElement, IProps> = (
 ) => (
   <button {...restProps} id={id} ref={ref}>
     {type === 'next' ? (
-      <img src="image/home/next.png" alt="" />
+      <img src="image/layout/next.png" alt="" />
     ) : (
-      <img src="image/home/prev.png" alt="" />
+      <img src="image/layout/prev.png" alt="" />
     )}
   </button>
 );

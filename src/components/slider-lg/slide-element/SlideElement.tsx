@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../SliderLG.module.scss';
 import Link from 'next/link';
 
-export const SlideElement = ({url,media, title, dateNow}) => {
+export const SlideElement = ({ url, media, title, dateNow }) => {
   return (
     <Link href={url}>
       <figure className={styles.figure}>
@@ -13,7 +13,7 @@ export const SlideElement = ({url,media, title, dateNow}) => {
           <div className={styles.description}>
             <h2 className={styles.title}>{title}</h2>
             <div className="">
-              <data>{dateNow}</data>
+              <time dateTime={dateNow}>{dateNow}</time>
             </div>
           </div>
         </figcaption>
