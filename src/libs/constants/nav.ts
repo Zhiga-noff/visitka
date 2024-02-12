@@ -6,7 +6,7 @@ import { IMenu } from '../types/menu.types';
 export const listNavHeader: IMenu[] = [
   {
     title: 'События',
-    link: '/events',
+    link: '/#events',
   },
   {
     title: 'Ресурсы',
@@ -14,18 +14,18 @@ export const listNavHeader: IMenu[] = [
   },
   {
     title: 'Контакты',
-    link: '/contacts',
+    link: '#contacts',
   },
 ] as const;
 
 export const listNavFooterTop: IMenu[] = [
   {
-    title: 'Контент',
-    link: '/content',
+    title: 'События',
+    link: '/#events',
   },
   {
     title: 'Ресурсы',
-    link: '/resources',
+    link: '/resources/tvzvezda',
   },
   {
     title: 'О нас',
@@ -33,7 +33,7 @@ export const listNavFooterTop: IMenu[] = [
   },
   {
     title: 'Контакты',
-    link: '/contacts',
+    link: '#contacts',
   },
   {
     title: 'Поиск',
@@ -48,11 +48,11 @@ export const listNavFooterBottom: IMenu[] = [
   },
   {
     title: 'Мероприятия',
-    link: '/activity',
+    link: '/#activity',
   },
   {
     title: 'Проекты',
-    link: '/projects',
+    link: '/#projects',
   },
   {
     title: 'Пресс-релизы',

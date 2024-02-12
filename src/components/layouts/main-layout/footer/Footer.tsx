@@ -9,7 +9,7 @@ import { listSocial } from '../../../../libs/constants/social';
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       <Link href="/" className={styles.logo}>
         <img src={logo.src} alt="Медиагруппа Звезда" />
       </Link>

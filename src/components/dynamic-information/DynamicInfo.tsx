@@ -12,7 +12,7 @@ import { newsMock } from '../../libs/constants/mock/news.mock';
 export const DynamicInfo = () => {
   return (
     <>
-      <section className={styles.wrapper}>
+      <section className={styles.wrapper} id="events">
         <div className={styles.container}>
           <News data={newsMock} />
           <Materials />

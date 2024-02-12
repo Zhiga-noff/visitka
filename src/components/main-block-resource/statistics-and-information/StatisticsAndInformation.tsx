@@ -18,7 +18,7 @@ export const StatisticsAndInformation: FC<IProps> = ({ typeStatistics }) => {
   return (
     <section className={styles.container}>
       <div className={styles.statistic}>
-        {statisticsMock[typeStatistics].map(
+        {statisticsMock[typeStatistics]?.map(
           ({ top, center, bottom, description }, index) => {
             return (
               <div className={styles.item} key={index}>
