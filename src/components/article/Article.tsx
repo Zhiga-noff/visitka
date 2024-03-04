@@ -1,35 +1,32 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import styles from './Article.module.scss';
+import {IBlock} from "../../libs/types";
 
 interface IProps {
-  articleData: {
-    image: string;
-    title: string;
-    text: string;
-    dataPublished: string;
-    hashTag: string;
-  };
+    data: IBlock;
 }
 
-export const Article: FC<IProps> = ({ articleData }) => {
-  const { image, title, text, dataPublished, hashTag } = articleData;
+export const Article: FC<IProps> = ({data}) => {
+    const {media, title, text, dateCreate, tags} = data.items[0];
 
-  return (
-    <article className={styles.container}>
-      <div className={styles.containerShadow}>
-        <div className={styles.imageContainer}>
-          <img src={image} alt={title} />
-        </div>
-      </div>
+    const images = media.images.i16x9.url
 
-      <h2 className={styles.title}>{title}</h2>
-      <div className={styles.description} dangerouslySetInnerHTML={{ __html: text }} />
-      <div className={styles.bottomInfo}>
-        <time dateTime={dataPublished} className={styles.data}>
-          {dataPublished}
-        </time>
-        <p className={styles.hashTag}>#{hashTag}</p>
-      </div>
-    </article>
-  );
+    return (
+        <article className={styles.container}>
+            <div className={styles.containerShadow}>
+                <div className={styles.imageContainer}>
+                    <img src={images} alt={title}/>
+                </div>
+            </div>
+
+            <h2 className={styles.title}>{title}</h2>
+            {/*<div className={styles.description} dangerouslySetInnerHTML={{__html: text}}/>*/}
+            <div className={styles.bottomInfo}>
+                <time dateTime={dateCreate} className={styles.data}>
+                    {dateCreate}
+                </time>
+                <p className={styles.hashTag}>#{tags}</p>
+            </div>
+        </article>
+    );
 };

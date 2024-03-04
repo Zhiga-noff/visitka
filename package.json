@@ -28,9 +28,11 @@
     "react-redux": "^8.0.7",
     "sharp": "0.33.1",
     "swiper": "^10.0.4",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.3",
+    "react-infinite-scroller": "^1.2.6"
   },
   "devDependencies": {
+    "@types/react-infinite-scroller": "^1.2.3",
     "@next/eslint-plugin-next": "^13.4.4",
     "@types/cookie": "^0.5.1",
     "@types/js-cookie": "^3.0.3",

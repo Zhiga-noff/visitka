@@ -1,10 +1,10 @@
 const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 /* Функция для создания рандомных строковых значений.
- * В зависимости от переданных аргументов будет возвращен
- * либо массив из указанного количества элементов(count)
- * либо одна строка, если count не был передана.
- * length - длин сгенерированных строк */
+* В зависимости от переданных аргументов будет возвращен
+* либо массив из указанного количества элементов(count)
+* либо одна строка, если count не был передана.
+* length - длин сгенерированных строк */
 
 function random(length: number): string;
 function random(length: number, count: number): string[];

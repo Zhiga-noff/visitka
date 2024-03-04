@@ -25,6 +25,7 @@ export default function RootLayout({children}: IProps) {
         <MainLayout>{children}</MainLayout>
         {/* Кастомная надстройка для принимания страниц  */}
         </body>
+        {/*<Script src={'/mediaholding/scripts/playerjs.js'} async strategy={'beforeInteractive'}/>*/}
         </html>
     );
 }

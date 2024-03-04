@@ -8,47 +8,47 @@ import image7 from 'assets/image/mock/photo-gallery/photo-07.png';
 import image8 from 'assets/image/mock/photo-gallery/photo-08.png';
 import image9 from 'assets/image/mock/photo-gallery/photo-09.png';
 import image10 from 'assets/image/mock/photo-gallery/photo-10.png';
-import { IMenu } from '../../types/menu.types';
+import {IMenu} from '../../types/mock-types/menu.types';
 
 export const photoGalleryMock: IMenu[] = [
-  {
-    title: 'name',
-    link: image1.src,
-  },
-  {
-    title: 'name',
-    link: image2.src,
-  },
-  {
-    title: 'name',
-    link: image3.src,
-  },
-  {
-    title: 'name',
-    link: image4.src,
-  },
-  {
-    title: 'name',
-    link: image5.src,
-  },
-  {
-    title: 'name',
-    link: image6.src,
-  },
-  {
-    title: 'name',
-    link: image7.src,
-  },
-  {
-    title: 'name',
-    link: image8.src,
-  },
-  {
-    title: 'name',
-    link: image9.src,
-  },
-  {
-    title: 'name',
-    link: image10.src,
-  },
+    {
+        title: 'name',
+        link: image1.src,
+    },
+    {
+        title: 'name',
+        link: image2.src,
+    },
+    {
+        title: 'name',
+        link: image3.src,
+    },
+    {
+        title: 'name',
+        link: image4.src,
+    },
+    {
+        title: 'name',
+        link: image5.src,
+    },
+    {
+        title: 'name',
+        link: image6.src,
+    },
+    {
+        title: 'name',
+        link: image7.src,
+    },
+    {
+        title: 'name',
+        link: image8.src,
+    },
+    {
+        title: 'name',
+        link: image9.src,
+    },
+    {
+        title: 'name',
+        link: image10.src,
+    },
 ];

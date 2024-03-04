@@ -6,9 +6,9 @@
  * разобранного спред оператором, а так же с полем содержащим
  * в себе функцию установления состояния setParams*/
 
-import { IData } from '../libs/types/data.types';
-import { useState } from 'react';
+import {IData} from '../libs/types/mock-types/data.types';
+import {useState} from 'react';
 
 export const useFetchItem = (data: IData[]) => {
-  const [params, setParams] = useState({ ...data, page: 1 });
+    const [params, setParams] = useState({...data, page: 1});
 };
