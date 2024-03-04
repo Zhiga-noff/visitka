@@ -21,10 +21,6 @@ export default async function HomePage() {
     return (
         <>
             <FullWidthBlock fullWidthData={FULL}/>
-            {/*<SliderLG data={sliderLgMock} />*/}
-            {/*<Filter />*/}
-            {/*<DynamicInfo />*/}
-            {/*<Ticker />*/}
         </>
     );
 }

@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import styles from './Article.module.scss';
-import {IBlock} from "../../libs/types";
+import {IBlock} from "../../../libs/types";
 
 interface IProps {
     data: IBlock;

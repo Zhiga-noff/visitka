@@ -48,12 +48,8 @@ export const DynamicInfo: FC<IProps> = ({data: apiData}) => {
                         <News data={data}/>
                     </InfiniteScroll>
 
-                    {/*<Materials/>*/}
-                    {/*<PhotoGallery data={photoGalleryMock}/>*/}
                     <ButtonDownloadMore clickFunction={showMoreInformation}/>
-
                 </div>
-                {/*<RowsMedia data={rowInfoMock} anons={'Сотрите так же'}/>*/}
             </section>
         </>
     );

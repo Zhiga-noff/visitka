@@ -1,10 +1,11 @@
 // 'use client';
 import {IBlock} from 'libs/types';
 import {FC} from 'react';
-import {SliderLG} from "../slider-lg/SliderLG";
-import {Article} from "../article/Article";
+
+import {Article} from "./article/Article";
 import {Filter} from "../filter/Filter";
 import {DynamicInfo} from "../dynamic-information/DynamicInfo";
+import {SliderLG} from "./slider-lg/SliderLG";
 
 // const SliderMDLazy = dynamic(() => import('./slider-md').then((mod) => mod.SliderMD));
 // const ListInfinityLazy = dynamic(() =>
@@ -22,10 +23,6 @@ interface IProps {
 export const ParcelingItem: FC<IProps> = ({data}) => {
     switch (data.templateKey) {
         /* Основной слайдер из больших слайдов картинок */
-        /* Слайдер средний используется для перечня программ */
-        case 'slider-sm': {
-            return <div></div>;
-        }
         case 'slider-lg': {
             return <>
                 <SliderLG data={data}/>

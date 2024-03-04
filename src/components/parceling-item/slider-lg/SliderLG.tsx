@@ -3,31 +3,22 @@
 import React, {FC, useState} from 'react';
 import styles from './SliderLG.module.scss';
 
-import {Swiper, SwiperSlide} from 'swiper/react';
+import {Swiper, SwiperSlide,} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import {SlideElement} from './slide-element/SlideElement';
-import {ButtonSlider} from '../ui/button-slider';
-import {IBlock} from "../../libs/types";
+import {ButtonSlider} from 'components/ui/button-slider';
+import {IBlock} from "libs/types";
 
 interface IProps {
     data: IBlock;
 }
 
 export const SliderLG: FC<IProps> = ({data}) => {
-    const [index, setIndex] = useState(1);
+    const [index, setIndex] = useState(0);
     const idOne = 'id-next-button';
     const idTwo = 'id-prev-button';
 
     const {items} = data;
-
-    const clickSlideButton = (type) => {
-        if (type === 'prev' && index !== 1) {
-            setIndex((prevState) => prevState - 1);
-        }
-        if (type === 'next' && index !== items.length) {
-            setIndex((prevState) => prevState + 1);
-        }
-    };
 
     return (
         <section className={styles.wrapper}>
@@ -40,6 +31,7 @@ export const SliderLG: FC<IProps> = ({data}) => {
                     prevEl: `#${idTwo}`,
                 }}
                 modules={[Navigation]}
+                onRealIndexChange={(el) => setIndex(el.activeIndex)}
             >
                 {items.map(({title, url, media, dateCreate: dateNow}, i) => {
                     return (
@@ -52,13 +44,11 @@ export const SliderLG: FC<IProps> = ({data}) => {
                     <ButtonSlider
                         id={idTwo}
                         type={'prev'}
-                        onClick={() => clickSlideButton('prev')}
                     />
-                    <p>{index + '/' + items.length}</p>
+                    <p>{index + 1 + '/' + items.length}</p>
                     <ButtonSlider
                         id={idOne}
                         type={'next'}
-                        onClick={() => clickSlideButton('next')}
                     />
                 </div>
             </Swiper>
