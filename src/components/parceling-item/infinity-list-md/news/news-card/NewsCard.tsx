@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import Link from 'next/link';
 import styles from '../News.module.scss';
 import {clsx} from 'clsx';
-import {IItem} from "../../../../libs/types/page-home.types";
+import {IItem} from "libs/types/page-home.types";
 
 interface IProps {
     data: IItem;
@@ -19,7 +19,7 @@ export const NewsCard: FC<IProps> = ({data, activeClass, index}) => {
                 <img src={media.images.i16x9.url} alt={title}/>
                 <figcaption className="">
                     <div className="">
-                        <h3 className={styles.title}>{title} + {index + 1}</h3>
+                        <h3 className={styles.title}>{title}</h3>
                         <div className="">
                             <time dateTime={dateCreate}>{dateCreate}</time>
                         </div>

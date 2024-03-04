@@ -1,25 +1,24 @@
-import React, { FC } from 'react';
-import { clsx } from 'clsx';
+import React, {FC} from 'react';
+import {clsx} from 'clsx';
+import Link from "next/link";
 
 interface IProps {
-  active: string;
-  className: string;
-  item: string;
-  typeInfo: string;
-  click;
+    active: string;
+    className: string;
+    item: string;
+    typeInfo: string;
+    link: string
 }
 
-export const Tabs: FC<IProps> = ({ item, className, active, typeInfo, click }) => {
-  return (
-    <button
-      className={clsx(className, {
-        [active]: typeInfo === item,
-      })}
-      onClick={() => {
-        click(item);
-      }}
-    >
-      {item}
-    </button>
-  );
+export const Tabs: FC<IProps> = ({item, className, active, typeInfo, link}) => {
+    return (
+        <Link href={link}
+              className={clsx(className, {
+                  [active]: typeInfo === item,
+              })}
+              scroll={false}
+        >
+            {item}
+        </Link>
+    );
 };

@@ -4,7 +4,7 @@ import {FC} from 'react';
 
 import {Article} from "./article/Article";
 import {Filter} from "../filter/Filter";
-import {DynamicInfo} from "../dynamic-information/DynamicInfo";
+import {InfinityListMd} from "./infinity-list-md/InfinityListMd";
 import {SliderLG} from "./slider-lg/SliderLG";
 
 // const SliderMDLazy = dynamic(() => import('./slider-md').then((mod) => mod.SliderMD));
@@ -31,12 +31,15 @@ export const ParcelingItem: FC<IProps> = ({data}) => {
         }
         /* Экран перечесления карточек в АУДИОКНИГАХ */
         case 'list-infinity-md': {
-            return <DynamicInfo data={data}/>;
+            return <InfinityListMd data={data}/>;
+            // return <ListInfinityLazy data={data} notAImage={notAImage} />;
+        }
+        case 'list-infinity-sm': {
+            return <InfinityListMd data={data}/>;
             // return <ListInfinityLazy data={data} notAImage={notAImage} />;
         }
         /* Визуально отображение оформление книги и ее ui */
         case 'article-lg': {
-            // return <></>
             return <Article data={data}/>;
         }
         case 'plain-html': {

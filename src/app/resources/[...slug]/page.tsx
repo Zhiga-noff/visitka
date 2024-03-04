@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import React from 'react';
 import { MainBlockResource } from '../../../components/main-block-resource/MainBlockResource';
-import { News } from '../../../components/dynamic-information/news/News';
+import { News } from '../../../components/infinity-list-md/news/News';
 import { NotMaterial } from '../../../components/not-material/NotMaterial';
 
 export const metadata: Metadata = {

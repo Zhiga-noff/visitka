@@ -48,11 +48,11 @@ export const listNavFooterBottom: IMenu[] = [
     },
     {
         title: 'Мероприятия',
-        link: '/#activity',
+        link: '/activity',
     },
     {
         title: 'Проекты',
-        link: '/#projects',
+        link: '/projects',
     },
     {
         title: 'Пресс-релизы',
@@ -90,3 +90,22 @@ export const listNavResource: IMenu[] = [
         link: '/resources/glavkino',
     },
 ] as const;
+
+export const tabsMock: IMenu[] = [
+    {
+        title: 'Мероприятия',
+        link: '/activity',
+    },
+    {
+        title: 'Проекты',
+        link: '/projects',
+    },
+    {
+        title: 'Информационные материалы',
+        link: '/materials',
+    },
+    {
+        title: 'Фото',
+        link: '/photo',
+    },
+] as const

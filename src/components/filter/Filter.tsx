@@ -1,8 +1,8 @@
 'use client';
 import React, {useState} from 'react';
 import styles from './Filter.module.scss';
-import {filterMock, tabsMock} from '../../libs/constants/mock/filter.mock';
 import {Tabs} from './tabs/Tabs';
+import {tabsMock} from "../../libs/constants/nav";
 
 export const Filter = () => {
     const [typeInfo, setTypeInfo] = useState('');
@@ -15,20 +15,19 @@ export const Filter = () => {
         <article className={styles.wrapper}>
             <div className={styles.containerFilter}>
                 <h3 className={styles.filter}>Фильтр</h3>
-                <nav className={styles.navigation}>
-                    {filterMock.map((item, index) => {
-                        return (
-                            <Tabs
-                                key={index}
-                                active={styles.active}
-                                item={item}
-                                className={styles.filterButton}
-                                typeInfo={typeInfo}
-                                click={clickButton}
-                            />
-                        );
-                    })}
-                </nav>
+                {/*<nav className={styles.navigation}>*/}
+                {/*    {filterMock.map((item, index) => {*/}
+                {/*        return (*/}
+                {/*            <Tabs*/}
+                {/*                key={index}*/}
+                {/*                active={styles.active}*/}
+                {/*                item={item}*/}
+                {/*                className={styles.filterButton}*/}
+                {/*                typeInfo={typeInfo}*/}
+                {/*            />*/}
+                {/*        );*/}
+                {/*    })}*/}
+                {/*</nav>*/}
             </div>
             <div className={styles.containerTabs}>
                 {tabsMock.map((item, index) => {
@@ -36,10 +35,10 @@ export const Filter = () => {
                         <Tabs
                             key={index}
                             active={styles.active}
-                            item={item}
+                            item={item.title}
                             className={styles.tabsButton}
                             typeInfo={typeInfo}
-                            click={clickButton}
+                            link={item.link}
                         />
                     );
                 })}

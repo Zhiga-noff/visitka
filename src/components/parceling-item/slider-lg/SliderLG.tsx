@@ -24,7 +24,6 @@ export const SliderLG: FC<IProps> = ({data}) => {
         <section className={styles.wrapper}>
             <Swiper
                 className={styles.slider}
-                onSlideChange={() => console.log('slide-element change')}
                 slidesPerView={1}
                 navigation={{
                     nextEl: `#${idOne}`,

@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {NewsCard} from './news-card/NewsCard';
 
 import styles from './News.module.scss';
-import {IItem} from "../../../libs/types/page-home.types";
+import {IItem} from "libs/types/page-home.types";
 
 interface IProps {
     data: IItem[];

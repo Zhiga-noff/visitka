@@ -47,6 +47,7 @@ export interface IBlock {
         | 'slider-lg'
         | 'block-sm'
         | 'list-infinity-md'
+        | 'list-infinity-sm'
         | 'banner-lg'
         | 'article-lg'
         | 'article-md'
