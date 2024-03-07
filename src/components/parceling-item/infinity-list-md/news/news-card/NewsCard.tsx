@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../News.module.scss';
 import {clsx} from 'clsx';
 import {IItem} from "libs/types/page-home.types";
+import {toFormatDate} from "../../../../../libs/utils/time";
 
 interface IProps {
     data: IItem;
@@ -12,6 +13,7 @@ interface IProps {
 
 export const NewsCard: FC<IProps> = ({data, activeClass, index}) => {
     const {url, media, title, dateCreate} = data;
+    const formatDate = toFormatDate(dateCreate)
 
     return (
         <Link href={url} className={clsx(styles.news, activeClass)}>
@@ -21,7 +23,7 @@ export const NewsCard: FC<IProps> = ({data, activeClass, index}) => {
                     <div className="">
                         <h3 className={styles.title}>{title}</h3>
                         <div className="">
-                            <time dateTime={dateCreate}>{dateCreate}</time>
+                            <time dateTime={dateCreate}>{formatDate}</time>
                         </div>
                     </div>
                 </figcaption>

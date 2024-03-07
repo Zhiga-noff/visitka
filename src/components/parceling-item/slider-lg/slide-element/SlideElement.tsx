@@ -3,7 +3,8 @@
 import React, {FC} from 'react';
 import styles from '../SliderLG.module.scss';
 import Link from 'next/link';
-import {IImagesData} from "../../../libs/types/page-home.types";
+import {IImagesData} from "libs/types/page-home.types";
+import {toFormatDate} from "../../../../libs/utils/time";
 
 interface IProps {
     url: string,
@@ -20,6 +21,8 @@ interface IProps {
 }
 
 export const SlideElement: FC<IProps> = ({url, media, title, dateNow}) => {
+    const formatDate = toFormatDate(dateNow)
+
     return (
         <Link href={url}>
             <figure className={styles.figure}>
@@ -30,7 +33,7 @@ export const SlideElement: FC<IProps> = ({url, media, title, dateNow}) => {
                     <div className={styles.description}>
                         <h2 className={styles.title}>{title}</h2>
                         <div className="">
-                            <time dateTime={dateNow}>{dateNow}</time>
+                            <time dateTime={dateNow}>{formatDate}</time>
                         </div>
                     </div>
                 </figcaption>

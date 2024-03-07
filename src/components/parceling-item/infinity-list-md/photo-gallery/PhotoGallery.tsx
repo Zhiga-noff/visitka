@@ -2,8 +2,8 @@
 
 import React, {FC, useEffect, useState} from 'react';
 import styles from './PhotoGallery.module.scss';
-import {IMenu} from '../../../libs/types/mock-types/menu.types';
-import {SvgItem} from '../../ui/SvgItem';
+import {IMenu} from 'libs/types/mock-types/menu.types';
+import {SvgItem} from 'components/ui/SvgItem';
 
 interface IProps {
     data: IMenu[];

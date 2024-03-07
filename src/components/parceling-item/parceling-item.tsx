@@ -6,6 +6,7 @@ import {Article} from "./article/Article";
 import {Filter} from "../filter/Filter";
 import {InfinityListMd} from "./infinity-list-md/InfinityListMd";
 import {SliderLG} from "./slider-lg/SliderLG";
+import {InfinityListSM} from "./infinity-list-sm/InfinityListSm";
 
 // const SliderMDLazy = dynamic(() => import('./slider-md').then((mod) => mod.SliderMD));
 // const ListInfinityLazy = dynamic(() =>
@@ -24,20 +25,19 @@ export const ParcelingItem: FC<IProps> = ({data}) => {
     switch (data.templateKey) {
         /* Основной слайдер из больших слайдов картинок */
         case 'slider-lg': {
-            return <>
+            return (<>
                 <SliderLG data={data}/>
                 <Filter/>
-            </>;
+            </>)
         }
         /* Экран перечесления карточек в АУДИОКНИГАХ */
+        case 'list-infinity-sm': {
+            return <InfinityListSM data={data}/>;
+        }
         case 'list-infinity-md': {
             return <InfinityListMd data={data}/>;
-            // return <ListInfinityLazy data={data} notAImage={notAImage} />;
         }
-        case 'list-infinity-sm': {
-            return <InfinityListMd data={data}/>;
-            // return <ListInfinityLazy data={data} notAImage={notAImage} />;
-        }
+
         /* Визуально отображение оформление книги и ее ui */
         case 'article-lg': {
             return <Article data={data}/>;

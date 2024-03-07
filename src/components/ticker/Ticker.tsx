@@ -1,6 +1,6 @@
 import Marquee from 'react-fast-marquee';
 import styles from './Ticker.module.scss';
-import { partners } from '../../libs/constants/partners';
+import { partners } from 'libs/constants/partners';
 
 export const Ticker = () => {
   return (

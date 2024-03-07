@@ -11,7 +11,7 @@ import {transformItems} from 'libs/utils/transform-items';
  *  добавить вместо cache в fetch */
 
 export const initPageData = async (url: string = '') => {
-    return fetch(`${BASE_URL}${url}`, {cache: 'no-store'})
+    return fetch(`${BASE_URL}${url}`, {cache: 'force-cache'})
         .then((res) => {
             return checkResponse<IPageHome>(res);
         })

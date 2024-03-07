@@ -1,0 +1,54 @@
+.information-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 3rem;
+  &__statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-right: 4rem;
+  }
+
+  &__item {
+    margin-right: 3rem;
+    max-width: 9.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__title-and-box {
+    padding: 0.5rem 1.3rem;
+    margin-bottom: 0.8rem;
+
+    max-width: 9rem;
+    border: 1px solid white;
+
+    font-size: 3.25rem;
+    text-align: center;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    span {
+      font-size: 1rem
+    }
+  }
+  &__description {
+    font-size: 0.625rem;
+    text-align: center;
+  }
+  &__information {
+    max-width: 36.3rem;
+  }
+}

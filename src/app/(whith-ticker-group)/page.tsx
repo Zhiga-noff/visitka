@@ -1,7 +1,7 @@
 import {Metadata} from 'next';
 import React from 'react';
-import {initPageData} from "../services/init-page.services";
-import {FullWidthBlock} from "../components/blocks-container/full-width-block/full-width-block";
+import {initPageData} from "../../services/init-page.services";
+import {FullWidthBlock} from "../../components/blocks-container/full-width-block/full-width-block";
 
 export const metadata: Metadata = {
     title: 'Главная страница',

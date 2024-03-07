@@ -1,5 +1,5 @@
 import React from 'react';
-import { materialsMock } from '../../../libs/constants/mock/materials.mock';
+import { materialsMock } from 'libs/constants/mock/materials.mock';
 import Link from 'next/link';
 import styles from './Materials.module.scss';
 

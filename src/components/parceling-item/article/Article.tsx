@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import styles from './Article.module.scss';
 import {IBlock} from "../../../libs/types";
+import {toFormatDate} from "../../../libs/utils/time";
 
 interface IProps {
     data: IBlock;
@@ -8,6 +9,7 @@ interface IProps {
 
 export const Article: FC<IProps> = ({data}) => {
     const {media, title, text, dateCreate, tags} = data.items[0];
+    const formatDate = toFormatDate(dateCreate)
 
     const images = media.images.i16x9.url
 
@@ -23,7 +25,7 @@ export const Article: FC<IProps> = ({data}) => {
             {/*<div className={styles.description} dangerouslySetInnerHTML={{__html: text}}/>*/}
             <div className={styles.bottomInfo}>
                 <time dateTime={dateCreate} className={styles.data}>
-                    {dateCreate}
+                    {formatDate}
                 </time>
                 <p className={styles.hashTag}>#{tags}</p>
             </div>

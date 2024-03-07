@@ -1,8 +1,11 @@
 import { Metadata } from 'next';
 import React from 'react';
 import { MainBlockResource } from '../../../components/main-block-resource/MainBlockResource';
-import { News } from '../../../components/infinity-list-md/news/News';
+
 import { NotMaterial } from '../../../components/not-material/NotMaterial';
+import {News} from "../../../components/parceling-item/infinity-list-md/news/News";
+import {FullWidthBlock} from "../../../components/blocks-container/full-width-block/full-width-block";
+import {initPageData} from "../../../services/init-page.services";
 
 export const metadata: Metadata = {
   title: 'Ресурсы',
@@ -16,13 +19,12 @@ export const metadata: Metadata = {
 };
 
 export default async function ResourcePage({ params }) {
-  // const newsData = newsMock;
-  const newsData = null;
+  const {FULL} = await initPageData()
 
   return (
     <>
       <MainBlockResource typeBanner={params.slug[0]} />
-      {newsData ? <News data={newsData} /> : <NotMaterial />}
+      <FullWidthBlock fullWidthData={FULL}/>
     </>
   );
 }
